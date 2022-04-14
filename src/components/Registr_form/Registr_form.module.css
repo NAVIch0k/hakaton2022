@@ -1,0 +1,160 @@
+.form_cont {
+  margin-top: 101px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.form_user {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  align-items: center;
+  max-width: 580px;
+}
+
+@media screen and (max-width: 1500px) {
+  .form_user {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1047px) {
+  .form_user {
+    box-sizing: border-box;
+    padding: 0 25px;
+    max-width: 780px;
+    width: 100%;
+  }
+}
+.num_user {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0500ff;
+}
+.form_user p {
+  margin: 0;
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0500ff;
+}
+.input_text {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 14px;
+  margin-bottom: 32px;
+}
+.grid_fix {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.input_text input {
+  width: 100%;
+  border: 2px solid #0500ff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px 0px 20px 32px;
+  color: #0500ff;
+  outline: none;
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+.input_text input::placeholder {
+  color: #0500ff;
+}
+::-webkit-calendar-picker-indicator {
+  background: none;
+}
+.load_file {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+.load_file:last-child {
+  margin-top: 20px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+input[type='text']:focus,
+input[type='email']:focus {
+  border: 2px dashed #000;
+  color: black;
+}
+input[type='text']:focus::placeholder,
+input[type='email']:focus::placeholder {
+  color: black;
+}
+
+.lable_file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 250px;
+  border: 2px solid #717171;
+  box-sizing: border-box;
+  border-radius: 28px;
+  padding: 14px 0px 14px 34px;
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  cursor: pointer;
+}
+.lable_file p {
+  color: #717171;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.button_img {
+  margin-right: 20px;
+  stroke-width: 2px;
+  flex-shrink: 0;
+}
+.load_sample {
+  display: flex;
+  gap: 14px;
+}
+.load_sample a {
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0500ff;
+}
+.active {
+  border: 2px solid #18a800;
+  color: #18a800;
+}
+.active .button_img * {
+  stroke: #18a800;
+  stroke-width: 2px;
+  margin-right: 10px;
+}
+.active p {
+  color: #18a800;
+}
+.show_message{
+  cursor: pointer;
+  text-decoration: underline;
+}

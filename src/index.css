@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background: radial-gradient(50% 50% at 50% 50%, #1047f1 0%, #282cad 100%);
+}

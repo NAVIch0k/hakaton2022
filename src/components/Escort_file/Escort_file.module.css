@@ -1,0 +1,39 @@
+.lable_file {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid #717171;
+  box-sizing: border-box;
+  border-radius: 28px;
+  padding: 14px 0px 14px 34px;
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  max-width: 260px;
+  min-width: 260px;
+}
+.button_img {
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.active {
+  border: 2px solid #18a800;
+  color: #18a800;
+  width: 160px;
+}
+.active .button_img * {
+  stroke: #18a800;
+  stroke-width: 2px;
+}
+.active p {
+  color: #18a800;
+
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  overflow: hidden;
+}

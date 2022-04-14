@@ -1,0 +1,151 @@
+$feature: max-width;
+$width_1500: 1500px;
+$width_1024: 1024px;
+$width_768: 768px;
+$width_430: 430px;
+$width_360: 360px;
+$width_320: 320px;
+
+.schedule {
+  max-width: 1420px;
+  width: 100%;
+
+  margin: 200px auto 0;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 65px;
+
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: #fff;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin: 0;
+
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  &__date {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(249, 213, 255, 0.7);
+  }
+
+  @media screen and ($feature: $width_1500) {
+    box-sizing: border-box;
+
+    max-width: 1132px;
+
+    margin-top: 200px;
+
+    padding: 0 25px;
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and ($feature: $width_1024) {
+    max-width: 928px;
+    margin-top: 140px;
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 40px 63px;
+    }
+    &__item {
+      flex-basis: 210px;
+      flex-grow: 1;
+      width: 100%;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and ($feature: $width_430) {
+    margin-top: 80px;
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+}
+
+.chart{
+  max-width: 1420px;
+  width: 100%;
+  margin: 100px auto 0;
+
+  &__title{
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+
+  &__item{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    margin: 0;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  &__link{
+    margin-left: 30px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  @media screen and ($feature: $width_1024) {
+    &__item{
+      display: block;
+    }
+
+    &__link{
+      margin: 0;
+    }
+  }
+  @media screen and ($feature: $width_430) {
+    &__title{
+      font-size: 30px;
+    }
+
+    &__text{
+      font-size: 16px;
+    }
+
+    &__link{
+      font-size: 16px;
+    }
+  }
+}

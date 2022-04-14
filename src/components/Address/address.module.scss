@@ -1,0 +1,143 @@
+$feature: max-width;
+$width_1500: 1500px;
+$width_1024: 1024px;
+$width_768: 768px;
+$width_430: 430px;
+$width_360: 360px;
+$width_320: 320px;
+
+.address {
+  &__wrap {
+    box-sizing: border-box;
+    max-width: 1420px;
+    width: 100%;
+
+    margin: 100px auto 0;
+    padding-top: 200px;
+  }
+
+  &__title {
+    margin: 0 0 58px 0;
+
+    font-family: Mulish, 'sans-serif';
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__maps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__map {
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__container {
+    align-self: center;
+    max-width: 342px;
+  }
+
+  &__block {
+    margin-bottom: 25px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-family: Mulish, 'sans-serif';
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #fff;
+  }
+
+  &__text {
+    margin: 0;
+
+    font-family: Mulish, 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &__map {
+    margin-bottom: 19px;
+    border-radius: 100%;
+  }
+
+  @media screen and ($feature: $width_1500) {
+    &__wrap {
+      max-width: 1132px;
+      padding-top: 120px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &__maps {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &__map {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  @media screen and ($feature: 1127px) {
+    &__wrap {
+      padding-top: 80px;
+    }
+    &__maps {
+      justify-content: center;
+      gap: 50px 112px;
+    }
+  }
+
+  @media screen and ($feature: $width_1024) {
+    &__wrap {
+      max-width: 928px;
+    }
+  }
+
+  @media screen and ($feature: $width_768) {
+    &__title {
+      font-size: 36px;
+      line-height: 59px;
+      margin-bottom: 65px;
+    }
+  }
+
+  @media screen and ($feature: $width_430) {
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 30px;
+    }
+    &__map {
+      width: 328px;
+      height: 328px;
+
+      align-self: center;
+    }
+  }
+
+  @media screen and ($feature: $width_360) {
+    &__map {
+      width: 310px;
+      height: 310px;
+    }
+  }
+}
